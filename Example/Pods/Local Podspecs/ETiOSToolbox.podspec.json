@@ -1,15 +1,15 @@
 {
   "name": "ETiOSToolbox",
   "version": "0.1.0",
-  "summary": "A short description of ETiOSToolbox.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/ETiOSToolbox",
+  "summary": "A helpful toolbox for iOS development.",
+  "description": "A helpful toolbox for iOS development. Including file operation...",
+  "homepage": "https://github.com/EricTan-TJH/ETiOSToolbox",
   "license": "MIT",
   "authors": {
     "EricTan": "erictan.tjh@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/ETiOSToolbox.git",
+    "git": "https://github.com/EricTan-TJH/ETiOSToolbox.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -30,20 +30,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0A3E49343F10BF7000F4B124D752814B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7F5EB8F755FB26DCC23A72DA0D1817EC</string>
-				<string>86E00018F506AC03AC16DF643695E8D5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
 		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
 		<dict>
 			<key>buildSettings</key>
@@ -152,29 +138,12 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>1A08BA99039CB4364D5A8074069ABC36</key>
+		<key>1B05E4B4AC0ACCD486D83B15CB0316D3</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
+			<key>fileRef</key>
+			<string>8FD0A8E59754CD8B668CCCBAAE0BA387</string>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1ADED1D23A3DD8D0ED8E5AC725232E0A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3B24E9D3DAA96F5C605FED0656934E86</string>
-			<key>remoteInfo</key>
-			<string>ETiOSToolbox-ETiOSToolbox</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>1D7CAA65E03ABBDE44F5B26DE5085E89</key>
 		<dict>
@@ -182,62 +151,6 @@
 			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>1E3D9D08E3146E481E8747F5D5948CEC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/ETiOSToolbox/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>ETiOSToolbox</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>23D48E34BEA932294CED350B461D24E0</key>
 		<dict>
@@ -355,6 +268,62 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2BF80AE744DC309DD2F48E5B35ABF8AF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/ETiOSToolbox/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ETiOSToolbox</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -368,6 +337,31 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>2D96B9BA13A1625B9F1B456FB021E451</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3185E263E88C749F3F17FB4D352A9829</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B514A9DB678A7F7FB272E5C9621F9A5</string>
+				<string>BB37A0A40AFE6425F880B988FF49BB86</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>31D0C27FA6979A47B1908B9FFBAE28D6</key>
 		<dict>
@@ -399,6 +393,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>35600ED04ED3F92B61BA58F5ABA8C460</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>3A2D234280F3CBCE0C6703F02F74C6CE</key>
 		<dict>
 			<key>isa</key>
@@ -406,45 +411,9 @@
 			<key>name</key>
 			<string>ETiOSToolbox</string>
 			<key>target</key>
-			<string>FE56228CC3B16CA6F9AD44B64D406560</string>
+			<string>A1E508B27C687CCA4EE4A9AC1CAE15EA</string>
 			<key>targetProxy</key>
 			<string>958EE6F51763327733A905EF7198F3DE</string>
-		</dict>
-		<key>3B24E9D3DAA96F5C605FED0656934E86</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0A3E49343F10BF7000F4B124D752814B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CAB018086A91FA8B36482F6CA7D27FA9</string>
-				<string>1A08BA99039CB4364D5A8074069ABC36</string>
-				<string>5DDD71CCB9E3A52F4139D4CDA773132F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ETiOSToolbox-ETiOSToolbox</string>
-			<key>productName</key>
-			<string>ETiOSToolbox-ETiOSToolbox</string>
-			<key>productReference</key>
-			<string>A790E54043F7F76E37C1659520E7B0F1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>3BA2EEDC61F6243CD36F13E6620D511D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>ETiOSToolbox-ETiOSToolbox</string>
-			<key>target</key>
-			<string>3B24E9D3DAA96F5C605FED0656934E86</string>
-			<key>targetProxy</key>
-			<string>1ADED1D23A3DD8D0ED8E5AC725232E0A</string>
 		</dict>
 		<key>3E4E89230EF59BC255123B67864ACF77</key>
 		<dict>
@@ -458,6 +427,17 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3EF161EDE973C4B93A6F731C0477028D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ETiOSToolbox-ETiOSToolbox</string>
+			<key>target</key>
+			<string>49B76956833F3A4E1280540A91D0522F</string>
+			<key>targetProxy</key>
+			<string>9343904EBB906E9947E105AF63F9D1A4</string>
 		</dict>
 		<key>3F5EE55F65FEC264F64186481A5B34A9</key>
 		<dict>
@@ -590,18 +570,30 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>4631C3F33990A3F1C57F56D1C610176D</key>
+		<key>49B76956833F3A4E1280540A91D0522F</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurationList</key>
+			<string>D7239D5000C03D50256A78B588D282EE</string>
+			<key>buildPhases</key>
 			<array>
-				<string>C0E7E6761B33C8CA03CD1A2AA02F8F34</string>
+				<string>2D96B9BA13A1625B9F1B456FB021E451</string>
+				<string>6D81C4F7D13BB5564E6AED04F5643E61</string>
+				<string>35600ED04ED3F92B61BA58F5ABA8C460</string>
 			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ETiOSToolbox-ETiOSToolbox</string>
+			<key>productName</key>
+			<string>ETiOSToolbox-ETiOSToolbox</string>
+			<key>productReference</key>
+			<string>A790E54043F7F76E37C1659520E7B0F1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
 		</dict>
 		<key>4E55F855F2331E2C3FF23301D264259E</key>
 		<dict>
@@ -610,18 +602,12 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>51B993159EBABD1CE74F15E1507E8DA5</key>
+		<key>4E8BCBB790A2858357E45802F099514A</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>88EB2CCFF2471312728D72114206698E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ReplaceMe.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>5386BE0606FC54BB903BEC21647B69F6</key>
 		<dict>
@@ -771,61 +757,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5A98D592FD7DA6920620581EA008A59C</key>
+		<key>58DC089B9F2721DB7B563CBE5E8F0AF5</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/ETiOSToolbox/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>ETiOSToolbox</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FileUtil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5C0A0908EB918B474FC35D81F881F73A</key>
 		<dict>
@@ -839,31 +782,6 @@
 			<string>Pods-ETiOSToolbox_Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DDD71CCB9E3A52F4139D4CDA773132F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5F2C9F9A568401EDD8949EB3EE92B633</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FAD38F42C365702D0179A6F86A9CA82</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>5F2E22E96D67E16DF86BBD67153AC9EB</key>
 		<dict>
@@ -891,6 +809,20 @@
 			<string>ETiOSToolbox-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60185BB919C89C42B4263EC3CD435FBF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4E8BCBB790A2858357E45802F099514A</string>
+				<string>1B05E4B4AC0ACCD486D83B15CB0316D3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>66DB02E62012DABF411667104C32FCBE</key>
 		<dict>
@@ -920,6 +852,17 @@
 			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D81C4F7D13BB5564E6AED04F5643E61</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>76929A785D3F56652857176708CC93F0</key>
 		<dict>
@@ -974,27 +917,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7F5EB8F755FB26DCC23A72DA0D1817EC</key>
+		<key>80611D4967D8E6D0FFEA63DDDB8197B9</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>ETiOSToolbox</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>81C03357F79B5BF8FA05CAFA63DC260A</key>
 		<dict>
@@ -1008,56 +936,6 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>8638DB7D27FAC838D908A2C3A64C0C97</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1E3D9D08E3146E481E8747F5D5948CEC</string>
-				<string>5A98D592FD7DA6920620581EA008A59C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>86E00018F506AC03AC16DF643695E8D5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>ETiOSToolbox</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>871DD2075019F7682601AB711BECE36E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>87FB018F0E6B55941485D63FC3F2679C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>51B993159EBABD1CE74F15E1507E8DA5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>88EB2CCFF2471312728D72114206698E</key>
 		<dict>
@@ -1084,6 +962,32 @@
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>8FD0A8E59754CD8B668CCCBAAE0BA387</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FileUtil.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9343904EBB906E9947E105AF63F9D1A4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>49B76956833F3A4E1280540A91D0522F</string>
+			<key>remoteInfo</key>
+			<string>ETiOSToolbox-ETiOSToolbox</string>
 		</dict>
 		<key>936D2F5EF4A4EB858A83B7C1248BBA39</key>
 		<dict>
@@ -1128,9 +1032,23 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>FE56228CC3B16CA6F9AD44B64D406560</string>
+			<string>A1E508B27C687CCA4EE4A9AC1CAE15EA</string>
 			<key>remoteInfo</key>
 			<string>ETiOSToolbox</string>
+		</dict>
+		<key>9B514A9DB678A7F7FB272E5C9621F9A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5FAD38F42C365702D0179A6F86A9CA82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>9B7D6CEA9B973E290A9F1429A19F38FC</key>
 		<dict>
@@ -1158,6 +1076,57 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>9FD89337EE1520CA8A402350A8FB0AAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A790E54043F7F76E37C1659520E7B0F1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A0468013793692132A57CEE42337FD83</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>58DC089B9F2721DB7B563CBE5E8F0AF5</string>
+				<string>8FD0A8E59754CD8B668CCCBAAE0BA387</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utils</string>
+			<key>path</key>
+			<string>Utils</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1E508B27C687CCA4EE4A9AC1CAE15EA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D1D0F56D1A24275D503698F02CEA7B9A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>60185BB919C89C42B4263EC3CD435FBF</string>
+				<string>FEAE6F0EBFB0694296977B7081045E34</string>
+				<string>E431789641F8A1F9905915B9252CF351</string>
+				<string>3185E263E88C749F3F17FB4D352A9829</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3EF161EDE973C4B93A6F731C0477028D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ETiOSToolbox</string>
+			<key>productName</key>
+			<string>ETiOSToolbox</string>
+			<key>productReference</key>
+			<string>ACD6A58857B40A469A8FB0EDC18172DB</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
 		<key>A2BA80D307F536F0E407297125B037AA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1168,6 +1137,21 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-ETiOSToolbox_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4F33680879F8ABFE2DDF22EE7A987FD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A0468013793692132A57CEE42337FD83</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1220,6 +1204,28 @@
 			<string>Target Support Files/Pods-ETiOSToolbox_Example</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A96EC34B9FD415F6DB16BF50F2C1F7F8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ETiOSToolbox</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>ACD6A58857B40A469A8FB0EDC18172DB</key>
 		<dict>
@@ -1309,6 +1315,20 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
+		<key>BB37A0A40AFE6425F880B988FF49BB86</key>
+		<dict>
+			<key>fileRef</key>
+			<string>58DC089B9F2721DB7B563CBE5E8F0AF5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
@@ -1335,6 +1355,28 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>BDC0669732A33B7B13230A6189069071</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ETiOSToolbox</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
 		<dict>
 			<key>children</key>
@@ -1345,35 +1387,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0E7E6761B33C8CA03CD1A2AA02F8F34</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A790E54043F7F76E37C1659520E7B0F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1ED47F09E4F1B8D24977E9C305A8763</key>
-		<dict>
-			<key>fileRef</key>
-			<string>88EB2CCFF2471312728D72114206698E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C23B81C79F6772B0FFDEE21FCB14331E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>51B993159EBABD1CE74F15E1507E8DA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1403,17 +1416,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CAB018086A91FA8B36482F6CA7D27FA9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>CAC18403F48D825B8BEEA86D03E2DE8A</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1426,6 +1428,20 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>D1D0F56D1A24275D503698F02CEA7B9A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2BF80AE744DC309DD2F48E5B35ABF8AF</string>
+				<string>FAB6827ED22577FBEA79FE4F075E5717</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>D3F2C034B8453ABC7F48F01301AF0EF9</key>
 		<dict>
@@ -1475,11 +1491,25 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>FE56228CC3B16CA6F9AD44B64D406560</string>
-				<string>3B24E9D3DAA96F5C605FED0656934E86</string>
+				<string>A1E508B27C687CCA4EE4A9AC1CAE15EA</string>
+				<string>49B76956833F3A4E1280540A91D0522F</string>
 				<string>146D021A7C93E945A6ADCBE9C49A8F1F</string>
 				<string>291BAF2367210598FECF479A4FE43DA2</string>
 			</array>
+		</dict>
+		<key>D7239D5000C03D50256A78B588D282EE</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>BDC0669732A33B7B13230A6189069071</string>
+				<string>A96EC34B9FD415F6DB16BF50F2C1F7F8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>D8704A933B65E71DBAF5246E800F2AF1</key>
 		<dict>
@@ -1514,7 +1544,7 @@
 			<key>name</key>
 			<string>ETiOSToolbox</string>
 			<key>target</key>
-			<string>FE56228CC3B16CA6F9AD44B64D406560</string>
+			<string>A1E508B27C687CCA4EE4A9AC1CAE15EA</string>
 			<key>targetProxy</key>
 			<string>E1C98E4AE57D4D075184BC1D56F572FD</string>
 		</dict>
@@ -1540,7 +1570,7 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>FE56228CC3B16CA6F9AD44B64D406560</string>
+			<string>A1E508B27C687CCA4EE4A9AC1CAE15EA</string>
 			<key>remoteInfo</key>
 			<string>ETiOSToolbox</string>
 		</dict>
@@ -1574,7 +1604,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C23B81C79F6772B0FFDEE21FCB14331E</string>
+				<string>A4F33680879F8ABFE2DDF22EE7A987FD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1584,6 +1614,19 @@
 			<string>ETiOSToolbox</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E431789641F8A1F9905915B9252CF351</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9FD89337EE1520CA8A402350A8FB0AAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>E6BED6342B13F1DA004E4833AB644333</key>
 		<dict>
@@ -1622,19 +1665,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EF44ADA85B7A3A23E7B3392E2B619516</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5F2C9F9A568401EDD8949EB3EE92B633</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>F4F442864A83528B5BBD838F54AAFEE7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1659,32 +1689,61 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F581F9CB75A793ECC6EA8808AFCC7865</key>
+		<key>FAB6827ED22577FBEA79FE4F075E5717</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>871DD2075019F7682601AB711BECE36E</string>
-			</array>
+			<key>baseConfigurationReference</key>
+			<string>C3CD3DCC21172A362AEBE5B4B6EF74F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/ETiOSToolbox/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/ETiOSToolbox/ETiOSToolbox.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>ETiOSToolbox</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F9832810BACCDD005BCE8C38A6EDD51A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1ED47F09E4F1B8D24977E9C305A8763</string>
-				<string>87FB018F0E6B55941485D63FC3F2679C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>FC1875646D0B7309EB82FFC6A5E24D6C</key>
 		<dict>
@@ -1699,33 +1758,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FE56228CC3B16CA6F9AD44B64D406560</key>
+		<key>FEAE6F0EBFB0694296977B7081045E34</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>8638DB7D27FAC838D908A2C3A64C0C97</string>
-			<key>buildPhases</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>F9832810BACCDD005BCE8C38A6EDD51A</string>
-				<string>F581F9CB75A793ECC6EA8808AFCC7865</string>
-				<string>4631C3F33990A3F1C57F56D1C610176D</string>
-				<string>EF44ADA85B7A3A23E7B3392E2B619516</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3BA2EEDC61F6243CD36F13E6620D511D</string>
+				<string>80611D4967D8E6D0FFEA63DDDB8197B9</string>
 			</array>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ETiOSToolbox</string>
-			<key>productName</key>
-			<string>ETiOSToolbox</string>
-			<key>productReference</key>
-			<string>ACD6A58857B40A469A8FB0EDC18172DB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>FFB29FE23238C95EF4D75C2EC6EFCD06</key>
 		<dict>
