@@ -1,0 +1,6 @@
+framework module Pods_ETiOSToolbox_Tests {
+  umbrella header "Pods-ETiOSToolbox_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

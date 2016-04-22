@@ -1,0 +1,6 @@
+framework module ETiOSToolbox {
+  umbrella header "ETiOSToolbox-umbrella.h"
+
+  export *
+  module * { export * }
+}

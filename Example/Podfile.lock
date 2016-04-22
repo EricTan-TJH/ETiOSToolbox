@@ -1,0 +1,14 @@
+PODS:
+  - ETiOSToolbox (0.1.0)
+
+DEPENDENCIES:
+  - ETiOSToolbox (from `../`)
+
+EXTERNAL SOURCES:
+  ETiOSToolbox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ETiOSToolbox: 697c33175054354a37be251b124173b423f4dec1
+
+COCOAPODS: 0.39.0
