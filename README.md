@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ETiOSToolbox.svg?style=flat)](http://cocoapods.org/pods/ETiOSToolbox)
 [![Platform](https://img.shields.io/cocoapods/p/ETiOSToolbox.svg?style=flat)](http://cocoapods.org/pods/ETiOSToolbox)
 
+A helpful util toolbox for iOS development. Including file operation，MBProgressHUD integration, and more is coming...
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -1,9 +1,9 @@
 //
 //  FileUtil.h
-//  Cordova
+//  ETiOSToolbox
 //
 //  Created by 谭剑晖 on 15/6/4.
-//  Copyright (c) 2015年 Rockmoon. All rights reserved.
+//  Copyright (c) 2015年 ENSInfo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
