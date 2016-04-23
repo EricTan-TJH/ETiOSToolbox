@@ -8,6 +8,8 @@
 
 #import "ETViewController.h"
 #import "FileUtil.h"
+#import "HudUtil.h"
+#import "MBProgressHUD.h"
 
 @interface ETViewController ()
 
@@ -20,6 +22,9 @@
     [super viewDidLoad];
 	
     NSLog(@"document path is %@",[FileUtil getDocumentPath]);
+    [HudUtil showTips:@"test hud util" toView:self.view duration:5];
+    //同时也引入了MBProgressHUD
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

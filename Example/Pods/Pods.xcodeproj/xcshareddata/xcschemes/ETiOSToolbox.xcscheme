@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CE0516499EBEA86A073C0210'
+               BlueprintIdentifier = 'F2A7EEF5875F0995E8AF36EC'
                BlueprintName = 'ETiOSToolbox'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ETiOSToolbox.framework'>
