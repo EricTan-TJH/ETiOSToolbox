@@ -1,5 +1,5 @@
 //
-//  FileUtil.h
+//  ETFileUtil.h
 //  ETiOSToolbox
 //
 //  Created by 谭剑晖 on 15/6/4.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface FileUtil : NSObject
+@interface ETFileUtil : NSObject
 
 typedef NS_ENUM(NSInteger, RootPathType) {
     RootPathTypeDocument = 1,

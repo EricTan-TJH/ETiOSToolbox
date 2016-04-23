@@ -1,15 +1,15 @@
 //
-//  HudUtil.m
+//  ETHudUtil.m
 //  ETiOSToolbox
 //
 //  Created by 谭剑晖 on 15/3/4.
 //  Copyright (c) 2015年 ENSInfo. All rights reserved.
 //
 
-#import "HudUtil.h"
+#import "ETHudUtil.h"
 #import "MBProgressHUD.h"
 
-@implementation HudUtil
+@implementation ETHudUtil
 
 + (void)showTips:(NSString*)tips toView:(UIView*)view duration:(int)duration {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];

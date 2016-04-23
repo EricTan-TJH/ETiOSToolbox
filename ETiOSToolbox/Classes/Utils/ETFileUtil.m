@@ -1,14 +1,14 @@
 //
-//  FileUtil.m
+//  ETFileUtil.m
 //  ETiOSToolbox
 //
 //  Created by 谭剑晖 on 15/6/4.
 //  Copyright (c) 2015年 ENSInfo. All rights reserved.
 //
 
-#import "FileUtil.h"
+#import "ETFileUtil.h"
 
-@implementation FileUtil
+@implementation ETFileUtil
 
 + (void)deleteFile:(NSString*)fileFullPath{
     NSFileManager *fileMgr = [NSFileManager defaultManager];

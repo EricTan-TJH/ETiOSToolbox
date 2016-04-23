@@ -1,5 +1,5 @@
 //
-//  HudUtil.h
+//  ETHudUtil.h
 //  ETiOSToolbox
 //
 //  Created by 谭剑晖 on 15/3/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HudUtil : NSObject
+@interface ETHudUtil : NSObject
 
 + (void)showTips:(NSString*)tips toView:(UIView*)view duration:(int)duration;
 
