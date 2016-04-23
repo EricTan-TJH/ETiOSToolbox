@@ -22,9 +22,10 @@
     [super viewDidLoad];
 	
     NSLog(@"document path is %@",[ETFileUtil getDocumentPath]);
-    [ETHudUtil showTips:@"test hud util" toView:self.view duration:5];
-    //同时也引入了MBProgressHUD
+    
+    //引入ETHudUtil的同时也引入了MBProgressHUD
     [[MBProgressHUD showHUDAddedTo:self.view animated:YES] hide:YES afterDelay:10];
+    [ETHudUtil showTips:@"test hud util" toView:self.view duration:5];
 }
 
 - (void)didReceiveMemoryWarning

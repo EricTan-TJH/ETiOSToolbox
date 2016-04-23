@@ -19,6 +19,21 @@
 		6A7BD9A858247072BD1F31D8DA6740B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D845B85452418508514CACED8FBB40 /* Foundation.framework */; };
 		6E7B5A2FB558217E40B967F5235BE3C1 /* ETiOSToolbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EB2CCFF2471312728D72114206698E /* ETiOSToolbox-dummy.m */; };
 		74218E66DC4080381D1BB1866B106B01 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E87AC53A560A8912805B4F7CA418E31 /* MBProgressHUD.framework */; };
+		75F023DE1CCB4AF90052E903 /* ETImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023DC1CCB4AF90052E903 /* ETImageUtil.h */; };
+		75F023DF1CCB4AF90052E903 /* ETImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023DD1CCB4AF90052E903 /* ETImageUtil.m */; };
+		75F023E11CCB4C4D0052E903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F023E01CCB4C4D0052E903 /* UIKit.framework */; };
+		75F023E41CCB4CAA0052E903 /* ETMapUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023E21CCB4CAA0052E903 /* ETMapUtils.h */; };
+		75F023E51CCB4CAA0052E903 /* ETMapUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023E31CCB4CAA0052E903 /* ETMapUtils.m */; };
+		75F023E71CCB4D380052E903 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F023E61CCB4D380052E903 /* CoreLocation.framework */; };
+		75F023E91CCB4D600052E903 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F023E81CCB4D600052E903 /* MapKit.framework */; };
+		75F023EE1CCB4F190052E903 /* ETPlistUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023EA1CCB4F190052E903 /* ETPlistUtil.h */; };
+		75F023EF1CCB4F190052E903 /* ETPlistUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023EB1CCB4F190052E903 /* ETPlistUtil.m */; };
+		75F023F01CCB4F190052E903 /* ETEncryptUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023EC1CCB4F190052E903 /* ETEncryptUtil.h */; };
+		75F023F11CCB4F190052E903 /* ETEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023ED1CCB4F190052E903 /* ETEncryptUtil.m */; };
+		75F023F71CCB4F210052E903 /* NSData+Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023F31CCB4F210052E903 /* NSData+Encryption.h */; };
+		75F023F81CCB4F210052E903 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023F41CCB4F210052E903 /* NSData+Encryption.m */; };
+		75F023F91CCB4F210052E903 /* UIImageView+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F023F51CCB4F210052E903 /* UIImageView+RoundedCorner.h */; };
+		75F023FA1CCB4F210052E903 /* UIImageView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F023F61CCB4F210052E903 /* UIImageView+RoundedCorner.m */; };
 		97440D68A512DCECAA12C8C04A5CCF34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D845B85452418508514CACED8FBB40 /* Foundation.framework */; };
 		9EE884E9F695F52876847C51F65BEBC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D845B85452418508514CACED8FBB40 /* Foundation.framework */; };
 		ABABAB1118B7FB535AAEE4543F9CA4DA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7EF56646DB1B2F653740B0FB77850B /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,6 +105,21 @@
 		5C0A0908EB918B474FC35D81F881F73A /* Pods-ETiOSToolbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ETiOSToolbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FAD38F42C365702D0179A6F86A9CA82 /* ETiOSToolbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ETiOSToolbox-umbrella.h"; sourceTree = "<group>"; };
 		66DB02E62012DABF411667104C32FCBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F023DC1CCB4AF90052E903 /* ETImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETImageUtil.h; sourceTree = "<group>"; };
+		75F023DD1CCB4AF90052E903 /* ETImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETImageUtil.m; sourceTree = "<group>"; };
+		75F023E01CCB4C4D0052E903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		75F023E21CCB4CAA0052E903 /* ETMapUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMapUtils.h; sourceTree = "<group>"; };
+		75F023E31CCB4CAA0052E903 /* ETMapUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMapUtils.m; sourceTree = "<group>"; };
+		75F023E61CCB4D380052E903 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		75F023E81CCB4D600052E903 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		75F023EA1CCB4F190052E903 /* ETPlistUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPlistUtil.h; sourceTree = "<group>"; };
+		75F023EB1CCB4F190052E903 /* ETPlistUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETPlistUtil.m; sourceTree = "<group>"; };
+		75F023EC1CCB4F190052E903 /* ETEncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEncryptUtil.h; sourceTree = "<group>"; };
+		75F023ED1CCB4F190052E903 /* ETEncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEncryptUtil.m; sourceTree = "<group>"; };
+		75F023F31CCB4F210052E903 /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		75F023F41CCB4F210052E903 /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		75F023F51CCB4F210052E903 /* UIImageView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundedCorner.h"; sourceTree = "<group>"; };
+		75F023F61CCB4F210052E903 /* UIImageView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RoundedCorner.m"; sourceTree = "<group>"; };
 		7E87AC53A560A8912805B4F7CA418E31 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F2CDCCEE84F3C3C45EA625C4EEAB8E /* ETHudUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ETHudUtil.m; sourceTree = "<group>"; };
 		88EB2CCFF2471312728D72114206698E /* ETiOSToolbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ETiOSToolbox-dummy.m"; sourceTree = "<group>"; };
@@ -137,6 +167,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F023E91CCB4D600052E903 /* MapKit.framework in Frameworks */,
+				75F023E71CCB4D380052E903 /* CoreLocation.framework in Frameworks */,
+				75F023E11CCB4C4D0052E903 /* UIKit.framework in Frameworks */,
 				6A7BD9A858247072BD1F31D8DA6740B3 /* Foundation.framework in Frameworks */,
 				74218E66DC4080381D1BB1866B106B01 /* MBProgressHUD.framework in Frameworks */,
 			);
@@ -181,6 +214,14 @@
 		2B5807474C58BD0C4FB2F3FD4801F684 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				75F023EA1CCB4F190052E903 /* ETPlistUtil.h */,
+				75F023EB1CCB4F190052E903 /* ETPlistUtil.m */,
+				75F023EC1CCB4F190052E903 /* ETEncryptUtil.h */,
+				75F023ED1CCB4F190052E903 /* ETEncryptUtil.m */,
+				75F023E21CCB4CAA0052E903 /* ETMapUtils.h */,
+				75F023E31CCB4CAA0052E903 /* ETMapUtils.m */,
+				75F023DC1CCB4AF90052E903 /* ETImageUtil.h */,
+				75F023DD1CCB4AF90052E903 /* ETImageUtil.m */,
 				473F39E042A8A1EFCEC3C5B28212ECE9 /* ETFileUtil.h */,
 				FC92DAEC6966B0F8FA2EC59F1C97DDB4 /* ETFileUtil.m */,
 				580B258368DB09627B89B0E8F566968B /* ETHudUtil.h */,
@@ -214,6 +255,17 @@
 				9841862FE02BD09196B31E3026B4325C /* MBProgressHUD */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		75F023F21CCB4F210052E903 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				75F023F31CCB4F210052E903 /* NSData+Encryption.h */,
+				75F023F41CCB4F210052E903 /* NSData+Encryption.m */,
+				75F023F51CCB4F210052E903 /* UIImageView+RoundedCorner.h */,
+				75F023F61CCB4F210052E903 /* UIImageView+RoundedCorner.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		7C1C23386CA12E7A0920543062B070D2 /* Pods-ETiOSToolbox_Tests */ = {
@@ -314,6 +366,9 @@
 		AAAF505381B46884DF7D4CD89B6AED7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75F023E81CCB4D600052E903 /* MapKit.framework */,
+				75F023E61CCB4D380052E903 /* CoreLocation.framework */,
+				75F023E01CCB4C4D0052E903 /* UIKit.framework */,
 				7E87AC53A560A8912805B4F7CA418E31 /* MBProgressHUD.framework */,
 				81748229AE57363F8CE59E3A48C1E452 /* iOS */,
 			);
@@ -323,6 +378,7 @@
 		BF0728AA15A54D62144119EE88AACCB9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				75F023F21CCB4F210052E903 /* Category */,
 				2B5807474C58BD0C4FB2F3FD4801F684 /* Utils */,
 			);
 			path = Classes;
@@ -371,9 +427,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F023F91CCB4F210052E903 /* UIImageView+RoundedCorner.h in Headers */,
 				B78B2184B61F24C52A1B15FE42F221EA /* ETiOSToolbox-umbrella.h in Headers */,
 				6768FCAF11EECE315AA645FDEEB08598 /* ETFileUtil.h in Headers */,
+				75F023F71CCB4F210052E903 /* NSData+Encryption.h in Headers */,
+				75F023DE1CCB4AF90052E903 /* ETImageUtil.h in Headers */,
+				75F023EE1CCB4F190052E903 /* ETPlistUtil.h in Headers */,
 				0496D81EC9BEE1A3EB68798DE6CE4315 /* ETHudUtil.h in Headers */,
+				75F023F01CCB4F190052E903 /* ETEncryptUtil.h in Headers */,
+				75F023E41CCB4CAA0052E903 /* ETMapUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,9 +596,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F023FA1CCB4F210052E903 /* UIImageView+RoundedCorner.m in Sources */,
+				75F023EF1CCB4F190052E903 /* ETPlistUtil.m in Sources */,
 				6E7B5A2FB558217E40B967F5235BE3C1 /* ETiOSToolbox-dummy.m in Sources */,
 				B6614D7BFBEF87B0E1697947210EB593 /* ETFileUtil.m in Sources */,
 				4A995A2653C42D56D4F618E2A3F60714 /* ETHudUtil.m in Sources */,
+				75F023DF1CCB4AF90052E903 /* ETImageUtil.m in Sources */,
+				75F023E51CCB4CAA0052E903 /* ETMapUtils.m in Sources */,
+				75F023F11CCB4F190052E903 /* ETEncryptUtil.m in Sources */,
+				75F023F81CCB4F210052E903 /* NSData+Encryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
