@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/ETiOSToolbox.svg?style=flat)](http://cocoapods.org/pods/ETiOSToolbox)
 [![Platform](https://img.shields.io/cocoapods/p/ETiOSToolbox.svg?style=flat)](http://cocoapods.org/pods/ETiOSToolbox)
 
-A helpful util toolbox for iOS development - Including file/plist operation，Image/ImageView enhancement, Data encryption, map/location calculation, MBProgressHUD integration, and more is coming...
+A helpful util toolbox for iOS development - Including some UI component enhancement, file/plist operation，Data encryption, map/location calculation, MBProgressHUD integration and more is coming...
 
 ## Usage
 

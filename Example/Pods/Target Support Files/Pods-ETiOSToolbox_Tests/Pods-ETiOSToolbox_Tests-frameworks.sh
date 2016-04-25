@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ETiOSToolbox_Tests/ETiOSToolbox.framework"
   install_framework "Pods-ETiOSToolbox_Tests/MBProgressHUD.framework"
+  install_framework "Pods-ETiOSToolbox_Tests/Masonry.framework"
+  install_framework "Pods-ETiOSToolbox_Tests/ETiOSToolbox.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ETiOSToolbox_Tests/ETiOSToolbox.framework"
   install_framework "Pods-ETiOSToolbox_Tests/MBProgressHUD.framework"
+  install_framework "Pods-ETiOSToolbox_Tests/Masonry.framework"
+  install_framework "Pods-ETiOSToolbox_Tests/ETiOSToolbox.framework"
 fi

@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "A helpful util toolbox for iOS development. Including file/plist operation，Image/ImageView enhancement, Data encryption, map/location calculation, MBProgressHUD integration..."
+  s.description      = "A helpful util toolbox for iOS development. Including some UI component enhancement, file/plist operation，Data encryption, map/location calculation, MBProgressHUD integration..."
 
   s.homepage         = "https://github.com/EricTan-TJH/ETiOSToolbox"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -36,5 +36,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
   s.dependency 'MBProgressHUD', '~> 0.9.2'
+  s.dependency 'Masonry', '~> 1.0.0'
 
 end
