@@ -30,6 +30,9 @@
     [ETHudUtil showTips:@"test hud util" toView:self.view duration:5];
     
     ETSizableTextView *tv = [[ETSizableTextView alloc] init];
+    tv.textColer = [UIColor redColor];
+    tv.placeHolder = @"please type some text here...";
+    tv.placeHolderColor = [UIColor whiteColor];
     tv.minHeight = 25;
     tv.maxHeight = 150;
     [self.view addSubview:tv];

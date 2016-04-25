@@ -2,6 +2,7 @@
 
 #import "NSData+Encryption.h"
 #import "UIImageView+RoundedCorner.h"
+#import "ETPlaceHolderTextView.h"
 #import "ETSizableTextView.h"
 #import "ETEncryptUtil.h"
 #import "ETFileUtil.h"

@@ -19,7 +19,12 @@
 @property (assign, nonatomic) id<ETSizableTextViewDelegate> delegate;
 @property (assign, nonatomic) float minHeight;
 @property (assign, nonatomic) float maxHeight;
+@property (strong, nonatomic) UIColor *bgColor;
+@property (strong, nonatomic) UIImage *bgImage;
 @property (strong, nonatomic) UIFont *font;
+@property (strong, nonatomic) UIColor *textColer;
+@property (strong, nonatomic) NSString *placeHolder;
+@property (strong, nonatomic) UIColor *placeHolderColor;
 
 - (void)setup;
 

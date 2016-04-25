@@ -8,9 +8,10 @@
 
 #import "ETSizableTextView.h"
 #import "Masonry.h"
+#import "ETPlaceHolderTextView.h"
 
 @implementation ETSizableTextView{
-    UITextView *tvInput;
+    ETPlaceHolderTextView *tvInput;
     BOOL isAddingANewLine;
     BOOL isDeletingALine;
     BOOL isEmptyBefore;
@@ -19,10 +20,14 @@
 - (void)setup{
     isEmptyBefore = YES;
     
-    tvInput = [[UITextView alloc]init];
-    tvInput.backgroundColor = [UIColor lightGrayColor];
+    tvInput = [[ETPlaceHolderTextView alloc]init];
+    tvInput.backgroundColor = self.bgColor;
+    
     [tvInput setFont:self.font];
+    [tvInput setTextColor:self.textColer];
     tvInput.delegate = self;
+    tvInput.placeholder = self.placeHolder;
+    tvInput.placeholderColor = self.placeHolderColor;
     [self addSubview:tvInput];
     
     [tvInput mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -31,6 +36,8 @@
         make.centerY.equalTo(self);
         make.height.mas_equalTo(self.minHeight);
     }];
+    
+    //TODO:add background image and set it to the size of tvInput
 }
 
 -(void)textViewDidChange:(UITextView *)textView{
