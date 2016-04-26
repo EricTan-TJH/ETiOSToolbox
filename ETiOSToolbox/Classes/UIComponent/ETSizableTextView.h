@@ -35,5 +35,6 @@
 @property (assign, nonatomic) int charLimit;
 
 - (void)setup;
+-(void)reset;
 
 @end
