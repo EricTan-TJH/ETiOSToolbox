@@ -25,6 +25,7 @@
 @property (strong, nonatomic) UIColor *textColer;
 @property (strong, nonatomic) NSString *placeHolder;
 @property (strong, nonatomic) UIColor *placeHolderColor;
+@property (strong, nonatomic) NSString *text;
 
 - (void)setup;
 

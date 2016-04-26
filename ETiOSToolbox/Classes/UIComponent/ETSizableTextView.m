@@ -50,6 +50,14 @@
     }
 }
 
+-(NSString *)text{
+    return tvInput.text;
+}
+
+-(void)setText:(NSString *)text{
+    tvInput.text = text;
+}
+
 -(void)textViewDidChange:(UITextView *)textView{
     if (isAddingANewLine || isDeletingALine) {
         [self changeFrameSize];
