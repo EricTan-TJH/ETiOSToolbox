@@ -7,6 +7,7 @@
 //
 
 #import "ETPlaceHolderTextView.h"
+#import "Masonry.h"
 
 @implementation ETPlaceHolderTextView{
     UILabel *placeHolderLabel;
@@ -34,7 +35,7 @@
     {
         if ( placeHolderLabel == nil )
         {
-            placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,5,self.bounds.size.width - 10,0)];
+            placeHolderLabel = [[UILabel alloc] init];
             placeHolderLabel.lineBreakMode = NSLineBreakByWordWrapping;
             placeHolderLabel.numberOfLines = 0;
             placeHolderLabel.font = self.font;
@@ -43,6 +44,11 @@
             placeHolderLabel.alpha = 0;
             placeHolderLabel.tag = 999;
             [self addSubview:placeHolderLabel];
+            
+            [placeHolderLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.mas_equalTo(self).with.offset(8);
+                make.left.mas_equalTo(self).with.offset(8);
+            }];
         }
         placeHolderLabel.text = self.placeholder;
         [placeHolderLabel sizeToFit];

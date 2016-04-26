@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ETSizableTextViewDelegate
-- (void)textviewSizeChanged;
+@protocol ETSizableTextViewDelegate<NSObject>
+- (void)textviewSizeChangedTo:(CGSize)currentSize;
 @optional
 - (void)inputChangeToMeaningless;
 @optional
@@ -32,6 +32,7 @@
 @property (strong, nonatomic) NSString *placeHolder;
 @property (strong, nonatomic) UIColor *placeHolderColor;
 @property (strong, nonatomic) NSString *text;
+@property (assign, nonatomic) int charLimit;
 
 - (void)setup;
 

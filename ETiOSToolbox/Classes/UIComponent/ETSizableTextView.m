@@ -12,14 +12,11 @@
 
 @implementation ETSizableTextView{
     ETPlaceHolderTextView *tvInput;
-    BOOL isAddingANewLine;
-    BOOL isDeletingALine;
     BOOL isEmptyBefore;
+    CGSize oldContentSize;
 }
 
 - (void)setup{
-    isEmptyBefore = YES;
-    
     tvInput = [[ETPlaceHolderTextView alloc]init];
     tvInput.backgroundColor = self.bgColor == nil ? [UIColor clearColor]: self.bgColor;
     [tvInput setFont:self.font];
@@ -35,6 +32,9 @@
         make.centerY.equalTo(self);
         make.height.mas_equalTo(self.minHeight);
     }];
+    
+    isEmptyBefore = YES;
+    oldContentSize = tvInput.contentSize;
     
     //add background image and set it to the size of tvInput
     if(self.bgImage!=nil){
@@ -59,8 +59,11 @@
 }
 
 -(void)textViewDidChange:(UITextView *)textView{
-    if (isAddingANewLine || isDeletingALine) {
+    //自动换行，回车断行，backspace回行
+    CGSize newContentSize = textView.contentSize;
+    if (newContentSize.width!=oldContentSize.width || newContentSize.height!=oldContentSize.height) {
         [self changeFrameSize];
+        oldContentSize = newContentSize;
     }
     
     //Trim and delete line
@@ -82,21 +85,7 @@
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    isDeletingALine = NO;
-    //退格或者退行
-    if ([text isEqualToString:@""]&& range.length==1) {
-        if([[textView.text substringWithRange:range] isEqualToString:@"\n"] ){
-            //退行
-            isDeletingALine = YES;
-        }
-    }
-    
-    isAddingANewLine = NO;
-    if ([text isEqualToString:@"\n"]) {
-        isAddingANewLine = YES;
-    }
-    
-    if (range.location>=200){
+    if (self.charLimit >0 && range.location>=self.charLimit){
         //控制输入文本的长度
         return  NO;
     }else{
@@ -105,11 +94,19 @@
 }
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
-    return [self.delegate textViewShouldBeginEditing:textView];
+    if ([self.delegate respondsToSelector:@selector(textViewShouldBeginEditing:)]) {
+        return [self.delegate textViewShouldBeginEditing:textView];
+    }else{
+        return YES;
+    }
 }
 
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView{
-    return [self.delegate textViewShouldEndEditing:textView];
+    if ([self.delegate respondsToSelector:@selector(textViewDidEndEditing:)]) {
+        return [self.delegate textViewShouldEndEditing:textView];
+    }else{
+        return YES;
+    }
 }
 
 - (void)changeFrameSize{
@@ -124,6 +121,7 @@
         make.height.mas_equalTo(toHeight);
     }];
     [self layoutIfNeeded];
-    [self.delegate textviewSizeChanged];
+    CGSize size = CGSizeMake(tvInput.frame.size.width, tvInput.frame.size.height);
+    [self.delegate textviewSizeChangedTo:size];
 }
 @end

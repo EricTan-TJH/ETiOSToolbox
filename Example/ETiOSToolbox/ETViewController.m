@@ -26,8 +26,8 @@
     NSLog(@"document path is %@",[ETFileUtil getDocumentPath]);
     
     //引入ETHudUtil的同时也引入了MBProgressHUD
-    [[MBProgressHUD showHUDAddedTo:self.view animated:YES] hide:YES afterDelay:10];
-    [ETHudUtil showTips:@"test hud util" toView:self.view duration:5];
+//    [[MBProgressHUD showHUDAddedTo:self.view animated:YES] hide:YES afterDelay:10];
+//    [ETHudUtil showTips:@"test hud util" toView:self.view duration:5];
     
     ETSizableTextView *tv = [[ETSizableTextView alloc] init];
     tv.textColer = [UIColor redColor];
@@ -40,10 +40,10 @@
     [self.view addSubview:tv];
     
     [tv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).with.offset(10);
-        make.right.equalTo(self.view).with.offset(-10);
-        make.top.equalTo(self.view).with.offset(10);
-        make.bottom.equalTo(self.view).with.offset(-10);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.bottom.equalTo(self.view);
     }];
     [tv setup];
 }
