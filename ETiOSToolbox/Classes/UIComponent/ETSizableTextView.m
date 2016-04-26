@@ -53,6 +53,7 @@
 -(void)reset {
     tvInput.text = @"";
     [self changeFrameSize];
+    [self.delegate inputChangeToMeaningless];
 }
 
 -(NSString *)text{
