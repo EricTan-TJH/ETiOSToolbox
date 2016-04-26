@@ -10,8 +10,14 @@
 
 @protocol ETSizableTextViewDelegate
 - (void)textviewSizeChanged;
+@optional
 - (void)inputChangeToMeaningless;
+@optional
 - (void)inputChangeToMeaningful;
+@optional
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView;
+@optional
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView;
 @end
 
 @interface ETSizableTextView : UIView<UITextViewDelegate>

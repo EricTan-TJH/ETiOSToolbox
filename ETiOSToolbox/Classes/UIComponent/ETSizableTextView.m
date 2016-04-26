@@ -104,6 +104,14 @@
     }
 }
 
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+    return [self.delegate textViewShouldBeginEditing:textView];
+}
+
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView{
+    return [self.delegate textViewShouldEndEditing:textView];
+}
+
 - (void)changeFrameSize{
     float toHeight = tvInput.contentSize.height;
     if (toHeight > self.maxHeight) {
