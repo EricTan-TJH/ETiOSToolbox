@@ -21,8 +21,7 @@
     isEmptyBefore = YES;
     
     tvInput = [[ETPlaceHolderTextView alloc]init];
-    tvInput.backgroundColor = self.bgColor;
-    
+    tvInput.backgroundColor = self.bgColor == nil ? [UIColor clearColor]: self.bgColor;
     [tvInput setFont:self.font];
     [tvInput setTextColor:self.textColer];
     tvInput.delegate = self;
@@ -37,7 +36,18 @@
         make.height.mas_equalTo(self.minHeight);
     }];
     
-    //TODO:add background image and set it to the size of tvInput
+    //add background image and set it to the size of tvInput
+    if(self.bgImage!=nil){
+        UIImageView *imageViewBg = [[UIImageView alloc]initWithImage:self.bgImage];
+        [self addSubview:imageViewBg];
+        [self sendSubviewToBack:imageViewBg];
+        [imageViewBg mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(tvInput);
+            make.right.equalTo(tvInput);
+            make.top.equalTo(tvInput);
+            make.bottom.equalTo(tvInput);
+        }];
+    }
 }
 
 -(void)textViewDidChange:(UITextView *)textView{

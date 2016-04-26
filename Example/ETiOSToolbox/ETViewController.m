@@ -35,6 +35,8 @@
     tv.placeHolderColor = [UIColor whiteColor];
     tv.minHeight = 25;
     tv.maxHeight = 150;
+    tv.bgImage = [UIImage imageNamed:@"ImageTextfieldMessageBackground"];
+//    tv.bgColor = [UIColor greenColor];
     [self.view addSubview:tv];
     
     [tv mas_makeConstraints:^(MASConstraintMaker *make) {
