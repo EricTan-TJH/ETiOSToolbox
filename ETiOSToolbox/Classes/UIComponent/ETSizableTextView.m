@@ -51,13 +51,14 @@
 }
 
 -(void)reset {
-    [tvInput mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).with.offset(10);
-        make.right.equalTo(self).with.offset(-10);
-        make.centerY.equalTo(self);
-        make.height.mas_equalTo(self.minHeight);
-    }];
+//    [tvInput mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self).with.offset(10);
+//        make.right.equalTo(self).with.offset(-10);
+//        make.centerY.equalTo(self);
+//        make.height.mas_equalTo(self.minHeight);
+//    }];
     tvInput.text = @"";
+    [self changeFrameSize];
 }
 
 -(NSString *)text{
