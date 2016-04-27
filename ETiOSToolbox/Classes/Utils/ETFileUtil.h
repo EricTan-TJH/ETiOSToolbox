@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, RootPathType) {
 + (NSString*)getDocumentPath;
 + (NSString*)getTempDir;
 + (void)deleteFile:(NSString*)fileFullPath;
++ (BOOL)isFileExist:(NSString*)filePath;
 
 + (BOOL)saveFileData:(NSData*)fileData withName:(NSString*)name toRelatePath:(NSString*)path underRoot:(RootPathType)rootType;
 + (NSArray*)filesListUnderRelatedPath:(NSString*)path underRoot:(RootPathType)rootType;
