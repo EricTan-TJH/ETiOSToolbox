@@ -54,6 +54,8 @@
     tvInput.text = @"";
     [self changeFrameSize];
     [self.delegate inputChangeToMeaningless];
+    isEmptyBefore = YES;
+    oldContentSize = tvInput.contentSize;
 }
 
 -(NSString *)text{
