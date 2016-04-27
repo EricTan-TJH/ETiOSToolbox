@@ -35,12 +35,6 @@
     return NSTemporaryDirectory();
 }
 
-+(BOOL)isFileExist:(NSString*)filePath
-{
-    NSFileManager *fileManager = [[NSFileManager  alloc]init];
-    return [fileManager fileExistsAtPath:filePath];
-}
-
 +(NSString*)rootPathByType:(RootPathType)type{
     NSString *path;
     switch (type) {
@@ -56,15 +50,33 @@
     return path;
 }
 
++(BOOL)isFileExist:(NSString*)filePath
+{
+    NSFileManager *fileManager = [[NSFileManager  alloc]init];
+    return [fileManager fileExistsAtPath:filePath];
+}
+
++(BOOL)createDirWithRelatedPath:(NSString*)path underRoot:(RootPathType)rootType {
+    NSString* fullPath = [[self rootPathByType:rootType] stringByAppendingPathComponent:path];
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    return [fileMgr createDirectoryAtPath:fullPath withIntermediateDirectories:YES attributes:nil error:nil];
+}
+
 +(BOOL)saveFileData:(NSData*)fileData withName:(NSString*)name toRelatePath:(NSString*)path underRoot:(RootPathType)rootType{
-    NSString *fullPathOfFile = [[[self rootPathByType:rootType] stringByAppendingPathComponent:path] stringByAppendingPathComponent:name];
+    NSString *fullPathOfFile = [self fullPathForName:name atRelatedPath:path underRoot:rootType];
     return [fileData writeToFile:fullPathOfFile atomically:YES];
 }
 
 +(NSData*)contentsForName:(NSString*)name atRelatePath:(NSString*)path underRoot:(RootPathType)rootType{
-    NSString *fullPathOfFile = [[[self rootPathByType:rootType] stringByAppendingPathComponent:path] stringByAppendingPathComponent:name];
+    NSString *fullPathOfFile = [self fullPathForName:name atRelatedPath:path underRoot:rootType];
     NSFileManager* fm=[NSFileManager defaultManager];
     return [fm contentsAtPath:fullPathOfFile];
+}
+
++ (NSData*)contentsForFullPath:(NSString*)filePath{
+    NSFileManager* fm=[NSFileManager defaultManager];
+    NSData *fileData = [fm contentsAtPath:filePath];
+    return fileData;
 }
 
 +(NSArray*)filesListUnderRelatedPath:(NSString*)path underRoot:(RootPathType)rootType{
@@ -78,9 +90,50 @@
     return filesList;
 }
 
-+ (BOOL)createDirWithRelatedPath:(NSString*)path underRoot:(RootPathType)rootType {
-    NSString* fullPath = [[self rootPathByType:rootType] stringByAppendingPathComponent:path];
-    NSFileManager *fileMgr = [NSFileManager defaultManager];
-    return [fileMgr createDirectoryAtPath:fullPath withIntermediateDirectories:YES attributes:nil error:nil];
++ (void)copyFileFromPath:(NSString*)srcPath toPath:(NSString*)desPath{
+    //所谓文件拷贝 就是从原文件里读往目的文件里写
+    //首先创建文件
+    NSFileManager * fm =[NSFileManager defaultManager];
+    NSError * error = nil;
+    
+    //获取源文件的属性
+    NSDictionary *attributes = [fm attributesOfItemAtPath:srcPath error:&error];
+    if(error){
+        NSLog(@"%@",error);
+        return;
+    }
+    
+    //创建新文件
+    BOOL ret = [fm createFileAtPath:desPath contents:nil attributes:attributes];
+    if (!ret) {
+        return;
+    }
+    
+    //打开文件句柄
+    NSFileHandle * srcFh = [NSFileHandle fileHandleForReadingAtPath:srcPath];
+    NSFileHandle * dstFh = [NSFileHandle fileHandleForWritingAtPath:desPath];
+    
+    //不要一口气就将源文件读入内存
+    //首先要获取源文件大小
+    unsigned long long size = [attributes fileSize];
+    
+    //这是一个方法，只有当字典中装文件属性才有效 实际上是一个类别
+    int buff = 100;
+    while (size) {
+        NSData * data =  nil;
+        if (size <= buff) {
+            data = [srcFh readDataToEndOfFile];
+            size  = 0;
+        }else{
+            //先读100个字节
+            data = [srcFh readDataOfLength:buff];
+            size -= buff;
+        }
+        [dstFh writeData:data];
+    }
+}
+
++ (NSString*)fullPathForName:(NSString*)name atRelatedPath:(NSString*)path underRoot:(RootPathType)rootType{
+    return [[[self rootPathByType:rootType] stringByAppendingPathComponent:path] stringByAppendingPathComponent:name];
 }
 @end

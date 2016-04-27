@@ -24,4 +24,7 @@ typedef NS_ENUM(NSInteger, RootPathType) {
 + (NSArray*)filesListUnderRelatedPath:(NSString*)path underRoot:(RootPathType)rootType;
 + (BOOL)createDirWithRelatedPath:(NSString*)path underRoot:(RootPathType)rootType;
 + (NSData*)contentsForName:(NSString*)name atRelatePath:(NSString*)path underRoot:(RootPathType)rootType;
++ (NSData*)contentsForFullPath:(NSString*)filePath;
++ (void)copyFileFromPath:(NSString*)srcPath toPath:(NSString*)desPath;
++ (NSString*)fullPathForName:(NSString*)name atRelatedPath:(NSString*)path underRoot:(RootPathType)rootType;
 @end
