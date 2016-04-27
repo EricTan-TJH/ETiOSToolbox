@@ -12,6 +12,7 @@
 
 + (NSString*)fullPathOfPlistInMainBundle:(NSString *)plistName;
 + (NSMutableDictionary*)contentInPlistPath:(NSString*)plistPath;
++ (NSString*)objectForKey:(NSString*)key inPlistPath:(NSString*)plistPath;
 + (void)writeContent:(NSDictionary*)plistContent toPlist:(NSString*)plistPath;
 + (void)writeToPlist:(NSString*)plistPath WithKey:(NSString*)key value:(NSString *)value;
 
